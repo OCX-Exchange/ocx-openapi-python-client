@@ -5,7 +5,7 @@ from ocx_client import Client
 public_client = Client()
 
 print(public_client.get_public("/api/v2/markets.json"))
-print(public_client.get_public("/api/v2/depth.json", params={"market": "btccny"}))
+print(public_client.get_public("/api/v2/depth.json", params={"market_code": "btccny"}))
 
 
 
